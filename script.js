@@ -1,12 +1,12 @@
 pet1 = {
-	petName : "Cocoa Herrera",
+	petName : "Cocoa",
 	age : 5,
 	gender : "F",
 	service : "Grooming",
 	breed : "Boxer"
 }
 pet2 = {
-	petName : "Bala",
+	petName : "Apollo",
 	age : 4,
 	gender : "M",
 	service : "Check-up",
@@ -30,3 +30,10 @@ let countDisplay = document.getElementById("petcount");
 countDisplay.innerHTML = petCount;
 let averageAgeDisplay = document.getElementById("average-age");
 averageAgeDisplay.innerHTML = petAgeAverage;
+
+let petNames = document.getElementById("names");
+for (let i = 0; i < pets.length; i++){
+	let paragraph = document.createElement("p");
+	paragraph.textContent = pets[i].petName;
+	petNames.appendChild(paragraph);
+}

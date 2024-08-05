@@ -64,13 +64,21 @@ nav a{
 .petcounter{
     font-size: 1.5rem;
 }
+
 #petcount, 
 #average-age{
     font-size: 3rem;
     color: rgb(255, 31, 192);
-    padding: 5px;
+    padding: 10px;
 }
 #puppy{
     padding-top: 5%;
 }
 
+#names{
+    font-size: 2rem;
+    color: rgb(255, 31, 192);
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
