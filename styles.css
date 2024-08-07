@@ -40,7 +40,6 @@ a{
     line-height: 1.5;
 }
 .btn{
-    
     display: block;
     width: 200px;
     background-color: black;
@@ -49,6 +48,7 @@ a{
     text-align: center;
     margin-top: 30px;
     font-size: 20px;
+    margin-bottom: 25px;
 }
 
 /* header */
@@ -58,19 +58,40 @@ nav a{
     font-size: 24px;
     margin: 10px 30px;
 }
+a:hover{
+    text-decoration: underline;
+}
 .site-header{
     background-color: #F8EDED;
 }
-.petcounter{
-    font-size: 1.5rem;
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
-#petcount, 
-#average-age{
-    font-size: 3rem;
-    color: rgb(255, 31, 192);
-    padding: 5px;
-}
-#puppy{
-    padding-top: 5%;
+.queue-container, .age-container, .name-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+#petCount, #petAge{
+   font-size: 3rem;
+   color: rgb(90, 2, 172);
+   font-weight: 900;
+   line-height: 1.5;
+   padding-bottom: 10px;
+}
+#petNames{
+    font-size: 3rem;
+    color: rgb(90, 2, 172);
+    font-weight: 900;
+    line-height: 1.5;
+    padding-bottom: 10px;
+}
+footer{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
