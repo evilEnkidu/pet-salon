@@ -41,13 +41,30 @@
                     <img src="./images/puppy.png" alt="Cute puppy" id="puppy">
 
                 </div>
-                <div>
-                    <h3 class="petcounter">We currently have:</h3>
-                    <p id="petcount"></p>
-                    <h3 class="petcounter">Pets waiting to be attended!</h4>
-                    <h3 class="petcounter">With an average age of:</h3>
-                    <p id="average-age"></p>
-                    <h3 class="petcounter"> years!</h3>
+
+                <div class="button-container">
+
+                    <div class="queue-container">
+
+                        <h3>See how many pets we have in queue!</h3>
+                        <button class="btn" onclick="showPetCount();" id="countBtn">Click here!</button>
+
+                    </div>
+
+                    <div class="age-container">
+
+                        <h3>Want to know the average age of our furry clients?</h3>
+                        <button class="btn" onclick="showAvgAge();" id="ageBtn">Click here!</button>
+
+                    </div>
+
+                    <div class="name-container">
+
+                        <h3>Want to meet our clients?</h3>
+                        <button class="btn" onclick="showPetNames();" id="nameBtn">Click here!</button>
+
+                    </div>
+
                 </div>
 
             </div>
