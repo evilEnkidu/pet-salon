@@ -21,8 +21,18 @@ a:hover{
     align-items: center;
     background: linear-gradient(135deg, #CAF4FF, #FFF9D0);
 }
+.logo{
+    font-family: "Pacifico", cursive;
+}
+.site-header{
+    padding: 50px 30px;
+    background: linear-gradient(-135deg, #CAF4FF, #FFF9D0);
+}
+.header-links{
+    padding-left: 35px;
+}
 .container{
-    padding: 25px 30px;
+    padding: 20px 25px;
     max-width: 1000px;
     width: 100%;
     background: #fff;
@@ -120,3 +130,11 @@ form .button button:hover{
         width: 0;
     }
 }
+#petsTotal{
+    font-size: medium;
+}
+.action{
+    text-align: center;
+}
+
+

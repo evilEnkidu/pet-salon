@@ -1,0 +1,162 @@
+/* Global */ 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Images */
+.main-img{
+    height: 400px;
+    width: auto;
+
+}
+.gallery-img{
+    height: 300px;
+    width: 300px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+/* Text */
+.main-text{
+    font-weight: 900 ;
+    font-size: 55px;
+    line-height: 1;
+    letter-spacing: 1;
+}
+.secondary-text{
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.info{
+    padding-top: 3%;
+    padding-right: 50px;
+}
+.normal-text{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.title{
+    padding-top: 20px;
+    font-family: "Pacifico", cursive;
+}
+.title-container{
+    padding-right: 55%;
+}
+a{ 
+    text-decoration: none;
+    color: black;
+    padding-right: 5px;
+}
+a:hover{
+    text-decoration: underline;
+}
+.card-text{
+    font-weight: 400;
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+.subtitle{
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: "Pacifico", cursive;
+    font-size: 40px;
+    margin-top: 4%;
+    margin-bottom: 2%;
+}
+/* header */
+.site-header{
+    padding: 25px;
+    margin: 10px;
+}
+.flex-navbar{
+    margin-inline: auto; 
+    display: flex;
+    justify-content: flex-end;  
+    align-items: center; 
+    gap: 40px;
+}
+.flex-link{
+    font-size: 20px;
+}
+
+/* Structure */ 
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #CAF4FF, #FFF9D0);;
+    border-top: 2px solid #4c4c4d;
+    border-bottom: 2px solid rgb(92, 91, 92);
+    padding: 20px 0 20px;
+}
+.button-container{
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.btn{
+    padding-left: 1px;
+    vertical-align: middle;
+    background-color: #caeeff;
+    margin: 0 auto;
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.name-container:hover,
+.age-container:hover,
+.queue-container:hover{
+    background: linear-gradient(-135deg, #CAF4FF, #FFF9D0);
+}
+.name-container,
+.age-container,
+.queue-container{
+    text-align: center;
+    background: linear-gradient(135deg, #CAF4FF, #FFF9D0);
+    padding: 30px;
+    border-radius: 10px;
+    border-color: azure;
+    border: none;
+    overflow-y: auto;
+}
+
+.gallery-container{
+    padding-top: 3%;
+}
+
+/* footer */
+footer{
+    background-color: #111;
+}
+.footer-container{
+    width: 100%;
+    padding: 20px 20px 10px;
+}
+.footer-nav{
+    margin: 30px 0;
+}
+.footer-nav ul{
+    display: flex;
+    justify-content: center;
+}
+.footer-nav ul li a{
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1em;
+    opacity: 0.7;
+}
+.footer-nav ul li a:hover{
+    opacity: 1;
+}
