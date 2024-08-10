@@ -15,18 +15,18 @@ a:hover{
 }
 .main{
     display: flex;
-    height: 100vh;
+    height: 65vh;
     font-size: 20px;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #CAF4FF, #FFF9D0);
+    background: linear-gradient(135deg, #95eaff, #fff4ab);
 }
 .logo{
     font-family: "Pacifico", cursive;
 }
 .site-header{
     padding: 50px 30px;
-    background: linear-gradient(-135deg, #CAF4FF, #FFF9D0);
+    background: linear-gradient(-135deg, #ffe554, #ffd2a0);
 }
 .header-links{
     padding-left: 35px;
@@ -136,5 +136,4 @@ form .button button:hover{
 .action{
     text-align: center;
 }
-
 

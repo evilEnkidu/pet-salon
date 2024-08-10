@@ -1,12 +1,13 @@
 var pets = [];
 
-function PetConstruct(name, age, gender, breed, service, type){
+function PetConstruct(name, age, gender, breed, service, type, agression){
     this.name = name; 
     this.age = age;
     this.gender = gender;
     this.breed = breed;
     this.service = service; 
     this.type = type;
+    this.agression = agression;
 }
 function isValid(pet){
     let validation = true;
@@ -23,8 +24,15 @@ function register(){
     let breedInput = document.getElementById("breedText").value;
     let serviceInput = document.getElementById("serviceText").value;
     let typeSelection = document.getElementById("typeOption").value;
+    let isAgressive;
+    if (document.getElementById("agression").checked === true){
+        isAgressive = "CAUTION";
+    }
+    else{
+        isAgressive = "No agression shown.";
+    }
 
-    let newPet = new PetConstruct(nameInput, ageInput, genderInput, breedInput, serviceInput, typeSelection);
+    let newPet = new PetConstruct(nameInput, ageInput, genderInput, breedInput, serviceInput, typeSelection, isAgressive);
     if (isValid(newPet) == true){
         pets.push(newPet);
         document.getElementById("petForm").reset();
@@ -57,6 +65,7 @@ function updateTable(){
                 <button type="button" class="btn btn-secondary" onclick="achievePet(${i})">Achieve</button>
                 <button type="button" class="btn btn-danger" onclick="deletePet(${i})">Delete</button>
             </td>
+            <td>${pet.agression}</td>
         </tr>`;
         tableBody.innerHTML += row;
     }
@@ -64,9 +73,10 @@ function updateTable(){
 }
 
 function startingPets(){
-    let pet1 = new PetConstruct("Shaggy", 2, 'M', 'Labrador', 'Neutering', 'Canine');
-    let pet2 = new PetConstruct("Velma", 1, 'F', 'Corgi', 'Check-up', 'Canine');
-    pets.push(pet1, pet2);
+    let pet1 = new PetConstruct("Charro", 2, 'M', 'Labrador', 'Neutering', 'Canine', 'CAUTION');
+    let pet2 = new PetConstruct("Apollo", 1, 'M', 'Corgi', 'Check-Up', 'Canine', 'No agression shown.');
+    let pet3 = new PetConstruct('Gala', 4, "F", "Mixed", "Grooming", "Canine", 'No agression shown.');
+    pets.push(pet1, pet2, pet3);
     updateTable();
     updateCount();
 }
