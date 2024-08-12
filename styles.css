@@ -89,7 +89,9 @@ a:hover{
 }
 
 /* Structure */ 
-
+body{
+    background-color: rgb(253, 253, 239);
+}
 .wrapper{
     display: flex;
     justify-content: center;

@@ -29,7 +29,7 @@ function register(){
         isAgressive = "CAUTION";
     }
     else{
-        isAgressive = "No agression shown.";
+        isAgressive = "No aggression shown.";
     }
 
     let newPet = new PetConstruct(nameInput, ageInput, genderInput, breedInput, serviceInput, typeSelection, isAgressive);
@@ -74,8 +74,8 @@ function updateTable(){
 
 function startingPets(){
     let pet1 = new PetConstruct("Charro", 2, 'M', 'Labrador', 'Neutering', 'Canine', 'CAUTION');
-    let pet2 = new PetConstruct("Apollo", 1, 'M', 'Corgi', 'Check-Up', 'Canine', 'No agression shown.');
-    let pet3 = new PetConstruct('Gala', 4, "F", "Mixed", "Grooming", "Canine", 'No agression shown.');
+    let pet2 = new PetConstruct("Apollo", 1, 'M', 'Corgi', 'Check-Up', 'Canine', 'No aggression shown.');
+    let pet3 = new PetConstruct('Gala', 4, "F", "Mixed", "Grooming", "Canine", 'No aggression shown.');
     pets.push(pet1, pet2, pet3);
     updateTable();
     updateCount();
